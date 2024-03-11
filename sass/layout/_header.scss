@@ -1,0 +1,47 @@
+.header__heading{
+    width: 60%;
+    height: 100vh;
+    padding-left: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    @media only screen and (max-width:37.5em){
+        padding-left: 10rem;
+    }
+    @media only screen and (max-width:25.5em){
+        padding-left: 5rem;
+    }
+
+    
+
+    &-title{
+        font-size: 5rem;
+        animation: fade-in 2s linear forwards;
+
+        @media only screen and (max-width:37.5em){
+            font-size: 3rem;
+        }
+       
+    }
+    &-text{
+        font-size: 2rem;
+        margin-bottom: 5rem;
+        animation: fade-in 2s linear forwards;
+
+        @media only screen and (max-width:37.5em){
+            font-size: 1.5rem;
+        }
+        
+    }
+}
+
+@keyframes fade-in {
+   from{
+    opacity: 0;
+   }
+    to{
+        opacity: 1;
+    }
+}

@@ -1,0 +1,62 @@
+.btn{
+    width: fit-content;
+    border-radius: 1rem;
+    background-color: transparent;
+    border: 2px solid $color-font;
+    scale: 1;
+    padding: .8rem 1rem;
+    cursor: pointer;
+    transition: all .2s;
+    font-family: inherit;
+    color: inherit;
+    font-size: inherit;
+    //box-shadow: $shadow--natural;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow:.3rem .3rem 4rem rgba(255,255,255,.1);
+
+    @media only screen and (max-width:25.5em){
+        
+        padding: .5rem .8rem;
+       }
+
+    &:focus {
+        outline: none;
+    }
+
+    &:active {
+        transform: translateY(2px);
+    }
+    &:hover{
+        scale: 1.1;
+        border-color: $color-primary;
+    }
+
+    &__lm{
+        width: auto;
+     padding: 2rem;
+     font-size: 1.8rem;
+     background: transparent;
+     border: 2px solid $color-font;
+     border-radius: 4rem;
+     color:$color-font;
+     opacity:0;
+     transform: translateY(5rem);
+     animation: slideIn 1s ease-in forwards;
+     animation-delay: 1s;
+    }
+   }
+
+   .btn svg{
+    fill: $color-font;
+   }
+
+   .btn a{
+    text-decoration: none;
+    color: inherit;
+   }
+
+   @keyframes slideIn {
+    to{opacity: 1; transform: translateY(0);}
+   }

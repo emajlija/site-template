@@ -1,0 +1,11 @@
+{
+  "name": "site-template",
+  "version": "1.0.0",
+  "description": "site template",
+  "main": "script.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "emajlija",
+  "license": "ISC"
+}

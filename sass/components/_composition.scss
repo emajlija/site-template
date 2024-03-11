@@ -1,0 +1,27 @@
+.composition{
+    
+
+
+    &__photo{
+        width: 70%;
+        height: auto;
+        border: .8rem solid $color-font;
+        border-radius: 1rem;
+
+        &--p1{
+            position: absolute;
+            top: -5%;
+            left: 5%;
+        }
+        &--p2{
+            position: absolute;
+            top: 30%;
+            right: -15%;
+        }
+        &--p3{
+            position: absolute;
+            top: 65%;
+            left: 15%;
+        }
+    }
+}

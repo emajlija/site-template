@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/7f5414fb58.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" type="image/png" href="img/Daco_1482.png" />
+    <title>Site Template</title>
+  </head>
+  <body>
+    <div class="navBar">
+      <div class="navBar_logoSide">
+        <div class="navBar_logoSide-logo">
+          <img src="img/Daco_1482.png" alt="Logo" />
+        </div>
+        <h1>H2O team</h1>
+      </div>
+      <div class="navBar_menuSide">
+        <div class="desktop-menu">
+          <ul class="menu-items">
+            <a href="index.html"><li>Home</li></a>
+            <a href="#about"><li>About</li></a>
+            <a href="#projects"><li>Projects</li></a>
+          </ul>
+        </div>
+        <div id="languageSwitcher">
+          <button class="lang-btn__srp" onclick="swithcLang('srp')">srp</button>
+          <button class="lang-btn__eng" onclick="swithcLang('eng')">eng</button>
+        </div>
+
+        <div id="menuToggle">
+          <input type="checkbox" />
+
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="menu">
+            <a href="index.html"><li>Home</li></a>
+            <a href="#about"><li>About</li></a>
+            <a href="#projects"><li>Projects</li></a>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="header__heading">
+      <h1 id="header title" class="header__heading-title">
+        Lorem ipsum dolor sit amet consectetur
+      </h1>
+      <h1 id="header text" class="header__heading-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, incidunt
+        ducimus unde consectetur quisquam dolor amet dignissimos minima
+      </h1>
+      <button class="btn btn__lm">
+        <a href="#about">Contact us</a>
+      </button>
+    </div>
+
+    <div class="about" id="about">
+      <div class="heading-container">
+        <h1 class="heading-container-title hide" id="about title">
+          Lorem ipsum dolor sit amet consectetur
+        </h1>
+        <h1 class="heading-container-text hide" id="about text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
+          incidunt ducimus unde consectetur quisquam dolor amet dignissimos
+          minima Lorem ipsum dolor sit amet consectetur adipisi
+        </h1>
+      </div>
+    </div>
+
+    <div class="projects" id="about2">
+      <div class="heading-container heading-container-projects">
+        <div class="about2__text">
+          <h1 class="heading-container-title" id="projects title">
+            Lorem ipsum dolor sit amet consectetur
+          </h1>
+          <h1 class="heading-container-text" id="projects text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
+            incidunt ducimus unde consectetur quisquam dolor amet dignissimos
+            minima Lorem ipsum dolor sit amet consectetur adipisi
+          </h1>
+        </div>
+      </div>
+      <div class="heading-container heading-container-pictures">
+        <div class="composition">
+          <img
+            src="img/nat-1-large.jpg"
+            alt="Photo 1"
+            class="composition__photo composition__photo--p1 hide"
+          />
+          <img
+            src="img/nat-2-large.jpg"
+            alt="Photo 2"
+            class="composition__photo composition__photo--p2 hide"
+          />
+          <img
+            src="img/nat-3-large.jpg"
+            alt="Photo 3"
+            class="composition__photo composition__photo--p3 hide"
+          />
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer" id="contact">
+      <div class="footer__logo">
+        <div class="nav__logo-box">
+          <img src="img/Daco_1482.png" alt="Nexter logo" />
+          <h1 class="heading-title">H2O team</h1>
+        </div>
+        <h1 class="heading-small mb-md">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </h1>
+
+        <div class="footer__info">
+          <i class="fa-solid fa-location-dot"></i>
+          <h1 class="heading-small">Nikole Pasica 25</h1>
+        </div>
+        <div class="footer__info">
+          <i class="fa-solid fa-phone"></i>
+          <h1 class="heading-small">063123456</h1>
+        </div>
+        <div class="footer__info">
+          <i class="fa-solid fa-envelope"></i>
+          <h1 class="heading-small">h2o.team.w@mail.com</h1>
+        </div>
+      </div>
+
+      <div
+        class="footer__contact heading-container heading-container-contact hide"
+      >
+        <h2 class="heading-title hide">Send message</h2>
+        <form
+          action="https://formsubmit.co/h2o.team.w@gmail.com"
+          target="_blank"
+          method="POST"
+          class="form hide"
+        >
+          <input
+            type="text"
+            class="form__input"
+            placeholder="Full name"
+            id="name"
+            name="name"
+            required
+          />
+          <label for="name" class="form__label">Full name</label>
+
+          <input
+            type="email"
+            class="form__input"
+            placeholder="Email address"
+            id="email"
+            name="email"
+            required
+          />
+          <label for="email" class="form__label">Email address</label>
+          <textarea
+            rows="10"
+            class="form__textarea"
+            placeholder="Your message..."
+            name="message"
+            required
+          ></textarea>
+          <input type="hidden" name="_captcha" value="false" />
+          <button type="submit" class="form__btn">Send</button>
+        </form>
+      </div>
+    </footer>
+    <div class="google-map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2869.395053421671!2d20.914234675897664!3d44.01323022907124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47572120cf94b987%3A0x90fc5df4070b24a8!2z0J3QuNC60L7Qu9C1INCf0LDRiNC40ZvQsCAyMSwg0JrRgNCw0LPRg9GY0LXQstCw0YY!5e0!3m2!1ssr!2srs!4v1707215833674!5m2!1ssr!2srs"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

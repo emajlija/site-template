@@ -1,0 +1,96 @@
+.navBar{
+    width: 100vw;
+    height: 10vh;
+    background-image: linear-gradient( to bottom, #1F2328 80%,
+    transparent 100%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 100;
+
+    &_logoSide{
+        width: 15rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: 1rem;
+        font-size: 1rem;
+
+        &-logo{
+            width: 4rem;
+        }
+        &-logo img{
+            width: 100%;
+        }
+    }
+
+    &_menuSide{
+        display: flex;
+      
+        padding-right: 2rem;
+    
+    }
+    
+}
+
+
+
+.desktop-menu {
+  width: 30rem;
+    
+  }
+  
+  .mobile-menu {
+    display: none;
+  }
+  
+  .menu-toggle {
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+  }
+
+  .menu-items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+
+.menu-items li{
+    list-style: none;
+
+}
+
+.menu-items a{
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+}
+
+.menu-items a:hover{
+    text-shadow: .2rem .2rem rgba(85, 153, 161, 0.5);
+    color: aqua;
+}
+.menu-items a:active{
+    color: aqua;
+
+}
+
+.mobile-menu {
+    display: none;
+
+  }
+
+
+  @media only screen and (max-width:25.5em){
+    .desktop-menu {
+        display: none;
+      }
+      
+  }
+
+  
