@@ -6,6 +6,7 @@ body {
   min-height: 100vh;
   min-width: 100vw;
   overflow-x: hidden;
+  overflow-y: scroll;
   font-family: Arial,sans-serif;
   line-height: 1.7;
   color: #cacaca;
@@ -446,7 +447,8 @@ body {
   width: 100%;
   left: 0;
   top: 0;
-  position: absolute; }
+  position: absolute;
+  filter: invert(90%) hue-rotate(180deg); }
 
 .form {
   width: 90%;
@@ -516,3 +518,24 @@ body {
       transform: translateY(2px); }
     .form__btn:hover {
       transform: translateY(2px); }
+
+progress {
+  -webkit-appearance: none;
+  appearance: none;
+  position: fixed;
+  top: 8%;
+  left: 5%;
+  transform: translate(calc(-50% + 3px), calc(50vh - 50%)) rotate(90deg);
+  width: 100vh;
+  height: 1rem; }
+
+progress::-webkit-progress-bar {
+  background-color: transparent; }
+
+progress[value="100"]::-webkit-progress-bar {
+  background-color: #10d5f8; }
+
+progress::-webkit-progress-value {
+  background-color: #10d5f8;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px; }

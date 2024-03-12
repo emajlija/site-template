@@ -58,3 +58,24 @@ function swithcLang(lang) {
     document.getElementById(key).innerHTML = languageContent[lang][key];
   }
 }
+
+//scroll progres animation
+const progressbar = document.querySelector("progress");
+const article = document.querySelector("body");
+
+let isScrolling = false;
+
+document.addEventListener("scroll", (e) => (isScrolling = true));
+
+render();
+
+function render() {
+  requestAnimationFrame(render);
+
+  if (!isScrolling) return;
+
+  progressbar.value =
+    (window.scrollY / (article.offsetHeight - window.innerHeight)) * 100;
+
+  isScrolling = false;
+}

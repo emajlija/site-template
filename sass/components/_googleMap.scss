@@ -19,4 +19,5 @@
     left: 0;
     top: 0;
     position: absolute;
+    filter: invert(90%) hue-rotate(180deg);
 }
