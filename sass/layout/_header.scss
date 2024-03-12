@@ -6,6 +6,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    position: relative;
 
     @media only screen and (max-width:37.5em){
         padding-left: 10rem;
@@ -44,4 +45,13 @@
     to{
         opacity: 1;
     }
+}
+
+#bubbles{
+    width: 30%;
+    height: 10%;
+    position: absolute;
+    top: 2%;
+    right: 0%;
+    filter: drop-shadow(5px 5px 20px rgba(255,255,255,.3));
 }

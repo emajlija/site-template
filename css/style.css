@@ -119,7 +119,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center; }
+  justify-content: center;
+  position: relative; }
   @media only screen and (max-width: 37.5em) {
     .header__heading {
       padding-left: 10rem; } }
@@ -145,6 +146,14 @@ body {
     opacity: 0; }
   to {
     opacity: 1; } }
+
+#bubbles {
+  width: 30%;
+  height: 10%;
+  position: absolute;
+  top: 2%;
+  right: 0%;
+  filter: drop-shadow(5px 5px 20px rgba(255, 255, 255, 0.3)); }
 
 .about {
   width: 100%;
