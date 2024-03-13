@@ -20,6 +20,8 @@
     &-title{
         font-size: 5rem;
         animation: fade-in 2s linear forwards;
+        color: $color-primary;
+        text-shadow: .3rem .3rem 0rem rgba($color-font,.3);
 
         @media only screen and (max-width:37.5em){
             font-size: 3rem;
@@ -53,5 +55,6 @@
     position: absolute;
     top: 2%;
     right: 0%;
-    filter: drop-shadow(5px 5px 20px rgba(255,255,255,.3));
+    filter: drop-shadow(2px 2px 4px rgba(255,255,255,.3));
 }
+

@@ -7,6 +7,7 @@ progress {
 	transform: translate(calc(-50% + 3px), calc(50vh - 50%)) rotate(90deg);
 	width: 100vh;
 	height: 1rem;
+	box-shadow: 2px 2px 8px rgba(255,255,255,.3);
 }
 
 progress::-webkit-progress-bar {
@@ -14,11 +15,11 @@ progress::-webkit-progress-bar {
 }
 
 progress[value="100"]::-webkit-progress-bar {
-	background-color: rgb(16, 213, 248);
+	background-color: $color-primary;
 }
 
 progress::-webkit-progress-value {
-	background-color: rgb(16, 213, 248);
+	background-color: $color-primary;
 	border-bottom-right-radius: 5px;
 	border-top-right-radius: 5px;
 }

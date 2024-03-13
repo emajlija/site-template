@@ -17,6 +17,7 @@
         justify-content: space-around;
         margin-left: 1rem;
         font-size: 1rem;
+        text-shadow: .2rem .2rem .2rem rgba($color-primary,.35);
 
         &-logo{
             width: 4rem;
@@ -34,7 +35,6 @@
     }
     
 }
-
 
 
 .desktop-menu {
@@ -72,11 +72,11 @@
 }
 
 .menu-items a:hover{
-    text-shadow: .2rem .2rem rgba(85, 153, 161, 0.5);
-    color: aqua;
+    text-shadow: .2rem .2rem .4rem rgba($color-font, 0.5);
+    color: $color-primary;
 }
 .menu-items a:active{
-    color: aqua;
+    color: $color-primary;
 
 }
 

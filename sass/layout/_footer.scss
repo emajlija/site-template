@@ -4,20 +4,37 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-left: 2rem;
+    //margin-left: 2rem;
     margin-right: 2rem;
+    border-bottom: .5rem solid $color-primary;
 
     &__logo{
         width: 40%;
+        padding-left: 2rem;
         
         &-box{
             display: flex;
             flex-direction: row;
+            align-items: center;
+            justify-content: left;
+            padding-bottom: 2rem;
         }
 
         @media only screen and (max-width:37.5em){
             width: 70%;
         }
+    }
+
+    &-title{
+        display: inline-block;
+        padding-left: 1rem;
+        font-size: 3rem;
+        text-shadow: .2rem .2rem .2rem rgba($color-primary,.35);
+        
+    }
+
+    &-text{
+        font-size: 1.8rem;
     }
 
     &__info{
@@ -26,12 +43,20 @@
         flex-direction: row;
         justify-content: left;
         align-items: center;
+        padding-top: 1rem;
+        font-size: 1rem;
         
     }
 
     &__info i{
         font-size: 2rem;
-        padding: 2rem 1rem 1rem 0;
+        padding: 1rem 1rem 1rem 0;
+        color: $color-primary;
+    }
+
+    &__contact-title{
+        font-size: 2rem;
+        color: $color-primary;
     }
 }
 

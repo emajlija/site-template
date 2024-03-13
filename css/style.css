@@ -63,7 +63,8 @@ body {
     align-items: center;
     justify-content: space-around;
     margin-left: 1rem;
-    font-size: 1rem; }
+    font-size: 1rem;
+    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 225, 255, 0.35); }
     .navBar_logoSide-logo {
       width: 4rem; }
     .navBar_logoSide-logo img {
@@ -99,11 +100,11 @@ body {
   transition: all .3s ease-in-out; }
 
 .menu-items a:hover {
-  text-shadow: 0.2rem 0.2rem rgba(85, 153, 161, 0.5);
-  color: aqua; }
+  text-shadow: 0.2rem 0.2rem 0.4rem rgba(202, 202, 202, 0.5);
+  color: #00e1ff; }
 
 .menu-items a:active {
-  color: aqua; }
+  color: #00e1ff; }
 
 .mobile-menu {
   display: none; }
@@ -129,7 +130,9 @@ body {
       padding-left: 5rem; } }
   .header__heading-title {
     font-size: 5rem;
-    animation: fade-in 2s linear forwards; }
+    animation: fade-in 2s linear forwards;
+    color: #00e1ff;
+    text-shadow: 0.3rem 0.3rem 0rem rgba(202, 202, 202, 0.3); }
     @media only screen and (max-width: 37.5em) {
       .header__heading-title {
         font-size: 3rem; } }
@@ -153,7 +156,7 @@ body {
   position: absolute;
   top: 2%;
   right: 0%;
-  filter: drop-shadow(5px 5px 20px rgba(255, 255, 255, 0.3)); }
+  filter: drop-shadow(2px 2px 4px rgba(255, 255, 255, 0.3)); }
 
 .about {
   width: 100%;
@@ -176,25 +179,42 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-left: 2rem;
-  margin-right: 2rem; }
+  margin-right: 2rem;
+  border-bottom: 0.5rem solid #00e1ff; }
   .footer__logo {
-    width: 40%; }
+    width: 40%;
+    padding-left: 2rem; }
     .footer__logo-box {
       display: flex;
-      flex-direction: row; }
+      flex-direction: row;
+      align-items: center;
+      justify-content: left;
+      padding-bottom: 2rem; }
     @media only screen and (max-width: 37.5em) {
       .footer__logo {
         width: 70%; } }
+  .footer-title {
+    display: inline-block;
+    padding-left: 1rem;
+    font-size: 3rem;
+    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 225, 255, 0.35); }
+  .footer-text {
+    font-size: 1.8rem; }
   .footer__info {
     width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: left;
-    align-items: center; }
+    align-items: center;
+    padding-top: 1rem;
+    font-size: 1rem; }
   .footer__info i {
     font-size: 2rem;
-    padding: 2rem 1rem 1rem 0; }
+    padding: 1rem 1rem 1rem 0;
+    color: #00e1ff; }
+  .footer__contact-title {
+    font-size: 2rem;
+    color: #00e1ff; }
 
 .footer img {
   width: 5rem; }
@@ -392,18 +412,21 @@ body {
 .heading-container {
   width: 50%;
   height: 50%;
-  border: 2px solid #cacaca;
+  border: 2px solid #00e1ff;
   padding: 5rem;
   border-radius: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: 0.5rem 0.5rem 5rem rgba(255, 255, 255, 0.15); }
+  box-shadow: 0.5rem 0.5rem 5rem rgba(255, 255, 255, 0.15);
+  background-color: rgba(0, 0, 0, 0.15); }
   .heading-container-title {
     font-size: 3rem;
     font-weight: 700;
-    padding-bottom: 2rem; }
+    padding-bottom: 2rem;
+    color: #00e1ff;
+    text-shadow: 0.2rem 0.2rem 0.4rem rgba(202, 202, 202, 0.3); }
   .heading-container-text {
     font-size: 2rem;
     text-align: justify; }
@@ -512,21 +535,22 @@ body {
     width: 80%;
     padding: 1rem;
     margin-top: 1.5rem;
-    border: 3px solid #00e1ff;
+    border: none;
     border-radius: .5rem;
     cursor: pointer;
-    background-color: transparent;
-    box-shadow: 0.5rem 0.5rem 5rem rgba(255, 255, 255, 0.15);
+    background-color: #cacaca;
+    box-shadow: 0.2rem 0.2rem 0.8rem rgba(255, 255, 255, 0.15);
     font-size: 1.5rem;
     font-weight: 700;
-    color: inherit;
+    color: #1F2328;
     transition: all .3s ease-in-out; }
     .form__btn:focus {
       outline: none; }
     .form__btn:active {
       transform: translateY(2px); }
     .form__btn:hover {
-      transform: translateY(2px); }
+      transform: translateY(2px);
+      background-color: rgba(202, 202, 202, 0.85); }
 
 progress {
   -webkit-appearance: none;
@@ -536,15 +560,16 @@ progress {
   left: 5%;
   transform: translate(calc(-50% + 3px), calc(50vh - 50%)) rotate(90deg);
   width: 100vh;
-  height: 1rem; }
+  height: 1rem;
+  box-shadow: 2px 2px 8px rgba(255, 255, 255, 0.3); }
 
 progress::-webkit-progress-bar {
   background-color: transparent; }
 
 progress[value="100"]::-webkit-progress-bar {
-  background-color: #10d5f8; }
+  background-color: #00e1ff; }
 
 progress::-webkit-progress-value {
-  background-color: #10d5f8;
+  background-color: #00e1ff;
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px; }
