@@ -1,5 +1,25 @@
+.heder-window{
+    position: relative;
+}
+.header-pic{
+    position: absolute;
+    top: 5rem;
+    right: -5rem;
+    width: 40%;
+
+    
+    @media only screen and (max-width:37.5em){
+       top: 35rem;
+       right: -2rem;
+       width: 50%;
+    }
+}
+.header-pic img{
+    width: 100%;
+}
+
 .header__heading{
-    width: 60%;
+    width: 50%;
     height: 100vh;
     padding-left: 20rem;
     display: flex;
@@ -49,12 +69,5 @@
     }
 }
 
-#bubbles{
-    width: 30%;
-    height: 10%;
-    position: absolute;
-    top: 2%;
-    right: 0%;
-    filter: drop-shadow(2px 2px 4px rgba(255,255,255,.3));
-}
+
 

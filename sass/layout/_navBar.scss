@@ -1,6 +1,7 @@
 .navBar{
     width: 100vw;
     height: 10vh;
+    
     background-image: linear-gradient( to bottom, #1F2328 80%,
     transparent 100%
     );
@@ -18,6 +19,10 @@
         margin-left: 1rem;
         font-size: 1rem;
         text-shadow: .2rem .2rem .2rem rgba($color-primary,.35);
+
+        @media only screen and (max-width:25.5em){
+          margin-left: 0;
+      }
 
         &-logo{
             width: 4rem;

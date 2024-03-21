@@ -1,6 +1,10 @@
 .composition{
     
-
+    @media only screen and (max-width:37.5em){
+        margin-left: 0;
+        margin-top: 5rem;
+        height: 18rem;
+    }
 
     &__photo{
         width: 70%;
